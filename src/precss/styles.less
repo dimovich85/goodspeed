@@ -1,0 +1,92 @@
+@import  'libs/lib.less';
+@import  'libs/var.less';
+@import  'libs/smart-grid.less';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&subset=cyrillic');
+
+.reset();
+
+a{
+	text-decoration: none;
+}
+
+nav{
+	li{
+		list-style: none;
+	}
+}
+
+/* Fonts */
+
+
+.wrapper{
+	.wrapper();
+}
+
+h1{
+	.font-size(48);
+	.md(font-size; 40px);
+	.sm(font-size; 30px);
+	.xs(font-size; 24px);	
+}
+h2{
+	.font-size(36);
+	.md(font-size; 30px);
+	.sm(font-size; 24px);
+	.xs(font-size; 20px);
+}
+h3{
+	.font-size(30);
+	.md(font-size; 24px);
+	.xs(font-size; 20px);
+}
+h4{
+	.font-size(24);
+	.xs(font-size; 20px);
+}
+h5{
+	.font-size(20);
+	.xs(font-size; 18px);
+}
+h6{
+	.font-size(18);
+	.xs-block({
+		font-size: 16px;
+		font-weight: bold;
+	});
+}
+p{
+	font-size: 16px;
+}
+
+*{
+	box-sizing: border-box;
+}
+body {
+	color: #000;
+	max-width: 1920px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font: 16px/2rem 'Montserrat', Arial, sans-serif;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Atomic */
+
+.d-n{
+	display: none;
+}
+
+
+.tt-u{
+	text-transform: uppercase;
+}
+
+.ta-c{
+	text-align: center;
+}
+
+
+/* Глобальные блоки */
+
