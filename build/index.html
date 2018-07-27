@@ -53,6 +53,19 @@
 				</li>
 			</ul>
 		</menu>
+		<button class="hamb d-n">
+			<svg version="1.1" id="hamb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 		viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+				<g>
+					<path d="M23.7,6.9H1.3C0.6,6.9,0,6.3,0,5.6V4.1c0-0.7,0.6-1.3,1.3-1.3h22.3c0.7,0,1.3,0.6,1.3,1.3v1.5C25,6.3,24.4,6.9,23.7,6.9z"
+						/>
+					<path d="M23.7,14.6H1.3C0.6,14.6,0,14,0,13.2v-1.5c0-0.7,0.6-1.3,1.3-1.3h22.3c0.7,0,1.3,0.6,1.3,1.3v1.5
+						C25,14,24.4,14.6,23.7,14.6z"/>
+					<path d="M23.7,22.2H1.3c-0.7,0-1.3-0.6-1.3-1.3v-1.5c0-0.7,0.6-1.3,1.3-1.3h22.3c0.7,0,1.3,0.6,1.3,1.3v1.5
+						C25,21.6,24.4,22.2,23.7,22.2z"/>
+				</g>
+			</svg>
+		</button>
 	</div>
 </header>
 
@@ -229,55 +242,62 @@
 
 <section class="faq">
 	<div class="wrapper">
-		<header class="faq__header">
-			<h2 class="faq__h"></h2>
-			<h4 class="faq__h3"></h4>
-		</header>
-		
-		<h3 class="faq__h3_caption"></h3>
-		
-		<article class="faq-article">
-			<h3 class="faq-article__h"></h3>
-			<p class="faq-article__text"></p>
-		</article>
-
-		<h3 class="faq__h3_caption"></h3>
-		
-		<article class="faq-article">
-			<h3 class="faq-article__h"></h3>
-			<p class="faq-article__text"></p>
-		</article>
-	</div>
-</section>
-
-<section class="pay">
-	<div class="wrapper">
-		<h2 class="pay__h"></h2>
-		<div class="pay__row">
-			<article class="pay__article">
-				<p class="pay__p"></p>
-			</article>
-			<section class="pay__logos">
-				<div class="pay__wrapper">
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-					<figure class="pay__logo">
-						<img src="" alt="" class="pay__img">
-					</figure>
-				</div>
+		<div class="row">
+			<section class="article article-faq">
+				<header class="article__header">
+					<h2 class="article__h">
+						Часто задаваемые вопросы о сервисе Goodspeed
+					</h2>
+					<h3 class="article__h3">
+						Если вы не нашли ответа на ваш вопрос, свяжитесь с нами!
+					</h3>
+				</header>
+				<article class="article-text article-faq__main">
+					<h4 class="article-text__h article-text__h_faq">
+						1. Как заказать устройство Goodspeed 4G?
+					</h4>
+					<p class="article-text__p article-text__p_faq">
+						Устройство можно заказать по адресу www.goodspeed.kz, выбирая функцию заказать сейчас или на главной странице выбрать необходимую вам страну в отделе ВЫБРАТЬ МЕСТО НАЗНАЧЕНИЯ.
+					</p>
+				</article>
+				<article class="article-text article-faq__main">
+					<h4 class="article-text__h article-text__h_faq">
+						2. Как получить устройство?
+					</h4>
+					<p class="article-text__p article-text__p_faq">
+						Вы можете получить устройство в наших отделах проката. Необходимо забрать устройство в том месте, которое вы указали при заказе.<br>
+						Также вы можете заказать доставку устройства прямо по адресу (возможно только в Финляндии). Необходимо сделать заказ за 3 дня до начала поездки.
+					</p>
+				</article>
+				<article class="article-text article-faq__main">
+					<h4 class="article-text__h article-text__h_faq">
+						3. Как возвратить устройство?
+					</h4>
+					<p class="article-text__p article-text__p_faq">
+						Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+					</p>
+				</article>
+				<button class="btn article__button">Все вопросы</button>
+			</section>
+			<section class="article article-payment">
+				<article class="article-text article-text_payment">
+					<h2 class="article__h article-text__h_payment">
+							Как оплатить заказ?		
+					</h2>
+					<p class="article-text__p article-text__p_payment">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+					</p>
+				</article>
+				<figure class="article-payment__figure">
+					<div class="row">
+						<img src="img/icons/visa.svg" alt="" class="article-payment__img">
+						<img src="img/icons/mastercard.svg" alt="" class="article-payment__img">
+						<img src="img/icons/yandex.png" alt="" class="article-payment__img">
+						<img src="img/icons/qiwi.svg" alt="" class="article-payment__img">
+						<img src="img/icons/rbk.png" alt="" class="article-payment__img">
+						<img src="img/icons/webmoney.svg" alt="" class="article-payment__img">
+					</div>
+				</figure>
 			</section>
 		</div>
 	</div>

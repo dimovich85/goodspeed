@@ -221,6 +221,16 @@ header.header{
 			z-index: 1;
 		}
 	}
+
+	button.func, button.hamb{
+		background-color: transparent;
+		border: none;
+		#hamb{
+			width: 20px;
+			fill: #fff;
+			cursor: pointer;
+		}
+	}
 }
 
 section.first-screen{
@@ -543,6 +553,7 @@ section.contact-us{
 			margin-right: auto;
 			font-weight: 400;
 			font-size: 16px;
+			line-height: 1.2;
 			.size(7);
 		}
 	}
@@ -595,7 +606,102 @@ section.contact-us{
 }
 
 section.faq{
+	
+	padding: 100px 0;
+	.row{
 
+	}
+
+	.article{
+			
+		.col();
+		.size(6);
+
+		&__h{
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 10px;
+		}
+
+		&__h3{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.1;
+			margin-bottom: 20px;
+		}
+
+		&__header{
+			margin-bottom: 20px;
+		}
+
+		&__button{
+			margin-top: 50px;
+		}
+	}
+
+	.article-faq{
+		
+		&__main{
+
+		}
+	}
+
+	.article-text{
+		
+		margin-bottom: 20px;
+		&__h{
+			
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 5px;
+			color: @orange;
+			line-height: 1.1;
+			&_faq{
+
+			}
+
+			&_payment{
+				margin-bottom: 30px;
+			}
+		}
+		
+		&__p{
+			
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.2;
+			&_faq{
+
+			}
+
+			&_payment{
+
+			}
+		}
+
+	}
+
+	.article-payment{
+		
+		.size(5);
+		.offset-left(1);
+		&__figure{
+			margin-bottom: 30px;
+		}
+
+		&__img{
+			.col();
+			.size(4);
+			@margin: 20px;
+			margin-top: @margin;
+			margin-bottom: @margin;
+		}
+
+		.row{
+			align-items: center;
+		}
+	}
 }
 
 section.company{
@@ -723,8 +829,3 @@ footer.footer{
 		}
 	}
 }
-
-
-
-
-
