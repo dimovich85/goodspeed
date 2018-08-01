@@ -27,19 +27,19 @@
 		<nav class="header-nav">
 			<ul class="header-nav__ul">
 				<li class="header-nav__li">
-					<a href="#" class="header-nav__a">MiFi</a>
+					<a href="#mifi" class="header-nav__a">MiFi</a>
 				</li>
 				<li class="header-nav__li">
-					<a href="#" class="header-nav__a">Цены</a>
+					<a href="#prices" class="header-nav__a">Цены</a>
 				</li>
 				<li class="header-nav__li">
-					<a href="#" class="header-nav__a">FAQ</a>
+					<a href="#faq" class="header-nav__a">FAQ</a>
 				</li>
 				<li class="header-nav__li">
-					<a href="#" class="header-nav__a">О нас</a>
+					<a href="#about" class="header-nav__a">О нас</a>
 				</li>
 				<li class="header-nav__li">
-					<a href="#" class="header-nav__a">Контакты</a>
+					<a href="#contacts" class="header-nav__a">Контакты</a>
 				</li>
 			</ul>
 		</nav>
@@ -88,7 +88,7 @@
 	</article>
 </section>
 
-<section class="video-block">
+<section class="video-block" id="mifi">
 	<div class="wrapper">
 		<div class="row">
 			<figure class="video-res">
@@ -147,7 +147,7 @@
 	</div>
 </section>
 
-<section class="about">
+<section class="about" id="prices">
 	<div class="wrapper">
 		<div class="row row_about">
 			<article class="article about-article">
@@ -175,7 +175,9 @@
 		<div class="row">
 			<section class="card">
 				<figure class="card__figure">
-					<img src="img/icons/ico1.svg" alt="" class="card__img">
+					<span class="card__back">
+						<img src="img/icons/ico1.svg" alt="" class="card__img">
+					</span>
 					<figcaption class="card__figcaption">
 						НАДЕЖНАЯ СВЯЗЬ
 					</figcaption>
@@ -186,7 +188,9 @@
 			</section>
 			<section class="card">
 				<figure class="card__figure">
-					<img src="img/icons/ico2.svg" alt="" class="card__img">
+					<span class="card__back">
+						<img src="img/icons/ico2.svg" alt="" class="card__img">
+					</span>
 					<figcaption class="card__figcaption">
 						ЭКОНОМИЯ ДО 90%
 					</figcaption>
@@ -197,7 +201,9 @@
 			</section>
 			<section class="card">
 				<figure class="card__figure">
-					<img src="img/icons/ico3.svg" alt="" class="card__img">
+					<span class="card__back">
+						<img src="img/icons/ico3.svg" alt="" class="card__img">
+					</span>
 					<figcaption class="card__figcaption">
 						ЦЕЛЫЙ МИР В ОДНОМ УСТРОЙ̆СТВЕ
 					</figcaption>
@@ -208,7 +214,9 @@
 			</section>
 			<section class="card">
 				<figure class="card__figure">
-					<img src="img/icons/ico4.svg" alt="" class="card__img">
+					<span class="card__back">
+						<img src="img/icons/ico4.svg" alt="" class="card__img">
+					</span>
 					<figcaption class="card__figcaption">
 						НАДЕЖНАЯ ЗАЩИТА ДАННЫХ
 					</figcaption>
@@ -240,7 +248,7 @@
 	</div>
 </section>
 
-<section class="faq">
+<section class="faq" id="faq">
 	<div class="wrapper">
 		<div class="row">
 			<section class="article article-faq">
@@ -325,7 +333,7 @@
 	</div>
 </section>
 
-<section class="company">
+<section class="company" id="about">
 		<div class="wrapper">
 			<div class="row">
 				<article class="company-article">
@@ -355,7 +363,7 @@
 		</div>
 </section>
 
-<section class="rulers">
+<section class="rulers" id="contacts">
 	<div class="wrapper">
 		<div class="row">
 			<section class="ruler">
@@ -405,7 +413,7 @@
 					copyright2018 Все права сохранены
 				</p>
 			</article>
-			<article class="copyright_license">
+			<article class="copyright copyright_license">
 				<p class="copyright__p copyright__p_license">
 					Photo by Alif Ngoylung on Unsplash
 				</p>
@@ -420,6 +428,141 @@
 	</div>
 </footer>
 
+<section class="modal d-n">
+	<div class="wrapper">
+		<div class="modal__container">
+			<section class="contact-us contact-us_second contact-us_modal">
+				<div class="wrapper">
+					<h2 class="form__h">Всегда на связи!</h2>
+					<h3 class="form__h3">Оставьте Ваш телефон или email и мы свяжемся с Вами в ближайшее время, чтобы ответить на все Ваши вопросы</h3>
+					<form action="#" class="contact-form">
+						<div class="input-wrapper">
+							<input type="text" class="contact-form__input" placeholder="Имя">
+						</div>
+						<div class="input-wrapper">
+							<input type="text" class="contact-form__input" placeholder="Телефон">
+						</div>
+						<div class="input-wrapper">
+							<input type="email" class="contact-form__input" placeholder="Email">
+						</div>
+						<div class="input-wrapper">
+							<input type="text" class="contact-form__input" placeholder="Сообщение">
+						</div>
+						<button class="btn contact-form__submit">Отправить</button>
+					</form>
+				</div>
+			</section>
+			<section class="faq faq_modal">
+				<div class="wrapper">
+					<section class="article article-faq">
+						<header class="article__header">
+							<h2 class="article__h">
+								Часто задаваемые вопросы о сервисе Goodspeed
+							</h2>
+							<h3 class="article__h3">
+								Если вы не нашли ответа на ваш вопрос, свяжитесь с нами!
+							</h3>
+						</header>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								1. Как заказать устройство Goodspeed 4G?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно заказать по адресу www.goodspeed.kz, выбирая функцию заказать сейчас или на главной странице выбрать необходимую вам страну в отделе ВЫБРАТЬ МЕСТО НАЗНАЧЕНИЯ.
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								2. Как получить устройство?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Вы можете получить устройство в наших отделах проката. Необходимо забрать устройство в том месте, которое вы указали при заказе.<br>
+								Также вы можете заказать доставку устройства прямо по адресу (возможно только в Финляндии). Необходимо сделать заказ за 3 дня до начала поездки.
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								3. Как возвратить устройство?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								3. Как возвратить устройство?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								3. Как возвратить устройство?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								3. Как возвратить устройство?
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+							</p>
+						</article>
+					</section>
+				</div>
+			</section>
+			<header class="header header_modal">
+				<div class="wrapper">
+					<figure class="logotype">
+						<a href="#"><img src="img/gsrlogo.png" alt=""></a>
+					</figure>
+					<nav class="header-nav">
+						<ul class="header-nav__ul">
+							<li class="header-nav__li">
+								<a href="#mifi" class="header-nav__a">MiFi</a>
+							</li>
+							<li class="header-nav__li">
+								<a href="#prices" class="header-nav__a">Цены</a>
+							</li>
+							<li class="header-nav__li">
+								<a href="#faq" class="header-nav__a">FAQ</a>
+							</li>
+							<li class="header-nav__li">
+								<a href="#about" class="header-nav__a">О нас</a>
+							</li>
+							<li class="header-nav__li">
+								<a href="#contacts" class="header-nav__a">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<menu class="header-menu">
+						<ul class="header-menu__ul">
+							<li class="header-menu__li">
+								<a href="tel:080000000000" class="header-menu__a">
+									<img src="img/icons/ico-phone.png" alt="" class="ico header-menu__ico">
+									0 800 0000 0000
+								</a>
+							</li>
+						</ul>
+					</menu>
+				</div>
+			</header>
+		</div>
+		<button class="closer" type="button">
+			<svg version="1.1" id="closer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 		viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+				<path d="M24.3,6.6l-21,14.9c-0.6,0.4-1.4,0.3-1.9-0.3l-1-1.5c-0.4-0.6-0.3-1.4,0.3-1.9l21-14.9c0.6-0.4,1.4-0.3,1.9,0.3l1,1.5
+					C25.1,5.3,24.9,6.1,24.3,6.6z"/>
+				<path d="M0.7,6.6l21,14.9c0.6,0.4,1.4,0.3,1.9-0.3l1-1.5c0.4-0.6,0.3-1.4-0.3-1.9L3.3,2.9C2.7,2.5,1.8,2.6,1.4,3.2l-1,1.5
+					C-0.1,5.3,0.1,6.1,0.7,6.6z"/>
+			</svg>
+		</button>
+	</div>
+</section>
 
 <script src="js/Plugins/jquery-3.1.1.min.js"></script>
 <script src="js/js.js"></script>
