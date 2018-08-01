@@ -177,10 +177,10 @@ gulp.task('js', function(){
 });
 
 // New
-gulp.task('build:css', ['backup'], function(){
+gulp.task('css:build', function(){
 	gulp.src(config.src + config.css.src)
 		.pipe(gcmq())
-		.pipe(sourcemaps.init())
+		//.pipe(sourcemaps.init())
 		.pipe(autopref({
             browsers: ['> 0.01%'],
             cascade: false
@@ -188,8 +188,8 @@ gulp.task('build:css', ['backup'], function(){
 		.pipe(cleanCSS({
 			level: 2
 		}))
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(config.src + config.css.dest))
+		//.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(config.build + config.css.dest))
 });
 
 gulp.task('bwSync', function(){
@@ -244,14 +244,14 @@ gulp.task('img', function(){
 
 gulp.task('js:build', function(){
     gulp.src(config.src + config.js.src)
-        .pipe(sourcemaps.init())
-		.pipe(concat('js-babel.js'))
+        //.pipe(sourcemaps.init())
+		.pipe(concat('js.js'))
 		.pipe(babel({
 			presets: ['es2015'],
 		}))
 		.pipe(uglify())
-	    .pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(config.src+config.js.dest));
+	    //.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(config.build+config.js.dest));
 });
 
 gulp.task('fonts', function(){

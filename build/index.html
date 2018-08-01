@@ -17,12 +17,12 @@
 	<! [endif]-->	
 
 </head>
-<body>
+<body id="head">
 
-<header class="header">
+<header class="header" >
 	<div class="wrapper">
 		<figure class="logotype">
-			<a href="#"><img src="img/gsrlogo.png" alt=""></a>
+			<a href="#head"><img src="img/gsrlogo.png" alt=""></a>
 		</figure>
 		<nav class="header-nav">
 			<ul class="header-nav__ul">
@@ -53,7 +53,7 @@
 				</li>
 			</ul>
 		</menu>
-		<button class="hamb d-n">
+		<button class="hamb d-n" type="button">
 			<svg version="1.1" id="hamb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 		viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
 				<g>
@@ -81,7 +81,7 @@
 			Всегда доступный высокоскоростной и безопасный интерент в любой точке мира, куда бы Вы не отправились!
 		</p>
 		<div class="button-wrapper">
-			<button class="btn firstr-article__button">
+			<button class="btn firstr-article__button" data-type="modal" data-target="contact-us_modal">
 				Заказать
 			</button>
 		</div>
@@ -143,7 +143,7 @@
 				Проблем с интернетом не будет! Высокоскоростной и безопасный интерент в любой точке мира, куда бы Вы не отправились!
 			</p>
 		</article>
-		<button class="btn slogan-article__button">Заказать</button>
+		<button class="btn slogan-article__button" data-type="modal" data-target="contact-us_modal">Заказать</button>
 	</div>
 </section>
 
@@ -159,8 +159,8 @@
 					Возьмите в прокат Goodspeed точку 
 					доступа Wi-Fi всего за  5 900 тенге в день!
 				</p>
-				<button class="btn about-article__button">Заказать</button>
-				<button class="btn_link about-article__button_link">Узнать больше о тарифах</button>
+				<button class="btn about-article__button" data-type="modal" data-target="contact-us_modal">Заказать</button>
+				<button class="btn_link about-article__button_link" data-type="modal" data-target="prices">Узнать больше о тарифах</button>
 			</article>
 			<figure class="about-figure">
 				<img src="img/img1.png" alt="" class="about-figure__img">
@@ -285,7 +285,7 @@
 						Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
 					</p>
 				</article>
-				<button class="btn article__button">Все вопросы</button>
+				<button class="btn article__button" data-type="modal" data-target="faq_modal">Все вопросы</button>
 			</section>
 			<section class="article article-payment">
 				<article class="article-text article-text_payment">
@@ -401,7 +401,7 @@
 				Закажи и путешествуй с MiFi!
 			</h2>
 		</article>
-		<button class="btn slogan-article__button">Заказать</button>
+		<button class="btn slogan-article__button" data-type="modal" data-target="contact-us_modal">Заказать</button>
 	</div>
 </section>
 
@@ -515,42 +515,45 @@
 					</section>
 				</div>
 			</section>
-			<header class="header header_modal">
+			<section class="prices faq faq_prices">
 				<div class="wrapper">
-					<figure class="logotype">
-						<a href="#"><img src="img/gsrlogo.png" alt=""></a>
-					</figure>
-					<nav class="header-nav">
-						<ul class="header-nav__ul">
-							<li class="header-nav__li">
-								<a href="#mifi" class="header-nav__a">MiFi</a>
-							</li>
-							<li class="header-nav__li">
-								<a href="#prices" class="header-nav__a">Цены</a>
-							</li>
-							<li class="header-nav__li">
-								<a href="#faq" class="header-nav__a">FAQ</a>
-							</li>
-							<li class="header-nav__li">
-								<a href="#about" class="header-nav__a">О нас</a>
-							</li>
-							<li class="header-nav__li">
-								<a href="#contacts" class="header-nav__a">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<menu class="header-menu">
-						<ul class="header-menu__ul">
-							<li class="header-menu__li">
-								<a href="tel:080000000000" class="header-menu__a">
-									<img src="img/icons/ico-phone.png" alt="" class="ico header-menu__ico">
-									0 800 0000 0000
-								</a>
-							</li>
-						</ul>
-					</menu>
+					<section class="article article-faq">
+						<header class="article__header">
+							<h2 class="article__h">
+								Тарифные планы
+							</h2>
+							<h3 class="article__h3">
+								Выбор под люьые потребности
+							</h3>
+						</header>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								1. Тариф "Эконом"
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно заказать по адресу www.goodspeed.kz, выбирая функцию заказать сейчас или на главной странице выбрать необходимую вам страну в отделе ВЫБРАТЬ МЕСТО НАЗНАЧЕНИЯ.
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								2. Тариф "Легкий старт"
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Вы можете получить устройство в наших отделах проката. Необходимо забрать устройство в том месте, которое вы указали при заказе.<br>
+								Также вы можете заказать доставку устройства прямо по адресу (возможно только в Финляндии). Необходимо сделать заказ за 3 дня до начала поездки.
+							</p>
+						</article>
+						<article class="article-text article-faq__main">
+							<h4 class="article-text__h article-text__h_faq">
+								3. Тариф "Все включено"
+							</h4>
+							<p class="article-text__p article-text__p_faq">
+								Устройство можно возвратить в отдел проката Goodspeed, из которого вы первоначально забрали устройство. Адрес отдела проката для возврата устройства указан в анкете заказа. Также вы можете возвратить устройство по почте (возможно только в Финляндии).
+							</p>
+						</article>
+					</section>
 				</div>
-			</header>
+			</section>
 		</div>
 		<button class="closer" type="button">
 			<svg version="1.1" id="closer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -562,6 +565,10 @@
 			</svg>
 		</button>
 	</div>
+</section>
+
+<section class="buttons">
+	<a class="btn-up" href="#head">Наверх</a>
 </section>
 
 <script src="js/Plugins/jquery-3.1.1.min.js"></script>

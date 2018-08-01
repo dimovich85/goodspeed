@@ -133,6 +133,17 @@ section {
   -webkit-padding-start: 0px;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #e78b28;
+}
+
 /* Fonts */
 
 .wrapper {
@@ -228,6 +239,15 @@ body img {
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.25);
   display: block;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #01C69F;
 }
 
 .btn_link {
@@ -268,47 +288,6 @@ header.header {
   right: 0;
   padding: 20px 0;
   z-index: 1;
-}
-
-header.header_modal {
-  position: static;
-  padding: 0;
-}
-
-header.header_modal.opened {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-header.header_modal.opened .header-nav {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -moz-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-  width: 100%;
-  margin-top: 30px;
-  display: block;
-}
-
-header.header_modal.opened .header-nav__ul {
-  display: block;
-}
-
-header.header_modal.opened .header-nav__li {
-  margin-bottom: 20px;
-}
-
-header.header_modal.opened .header-menu {
-  display: block;
 }
 
 header.header .wrapper {
@@ -357,11 +336,22 @@ header.header .header-nav__ul {
 header.header .header-nav__li {
   font-size: 14px;
   margin: 5px 20px;
+  cursor: pointer;
 }
 
 header.header .header-nav__a {
   font-weight: 500;
   color: #fff;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+header.header .header-nav__a:hover,
+header.header .header-nav__a:active {
+  color: #e78b28;
+  text-decoration: underline;
 }
 
 header.header .header-menu {
@@ -384,11 +374,22 @@ header.header .header-menu__ul {
 header.header .header-menu__li {
   font-size: 16px;
   margin: 5px 20px;
+  cursor: pointer;
 }
 
 header.header .header-menu__a {
   font-weight: 600;
   color: #fff;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+header.header .header-menu__a:hover,
+header.header .header-menu__a:active {
+  color: #e78b28;
+  text-decoration: underline;
 }
 
 header.header .header-menu__ico {
@@ -401,6 +402,7 @@ header.header button.func,
 header.header button.hamb {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 header.header button.func #hamb,
@@ -408,6 +410,98 @@ header.header button.hamb #hamb {
   width: 30px;
   fill: #fff;
   cursor: pointer;
+}
+
+header.header.mobile,
+header.header.mobile.scroll-header {
+  z-index: 15;
+  top: 70px;
+  left: 10px;
+  position: fixed;
+  background-color: transparent;
+  line-height: 1.2;
+  padding: 20px 0;
+}
+
+header.header.mobile .wrapper,
+header.header.mobile.scroll-header .wrapper {
+  display: block;
+}
+
+header.header.mobile button.hamb,
+header.header.mobile.scroll-header button.hamb {
+  display: none;
+}
+
+header.header.mobile .logotype,
+header.header.mobile.scroll-header .logotype {
+  position: fixed;
+  top: 20px;
+  left: 15px;
+}
+
+header.header.mobile .header-menu,
+header.header.mobile.scroll-header .header-menu {
+  display: block !important;
+  margin: 0;
+  margin: 30px 0;
+  z-index: 16;
+}
+
+header.header.mobile .header-menu__ul,
+header.header.mobile.scroll-header .header-menu__ul {
+  display: block !important;
+}
+
+header.header.mobile .header-menu__li,
+header.header.mobile.scroll-header .header-menu__li {
+  margin: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+header.header.mobile .header-menu__a,
+header.header.mobile.scroll-header .header-menu__a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header.header.mobile .header-nav,
+header.header.mobile.scroll-header .header-nav {
+  display: block !important;
+  margin: 30px 0;
+}
+
+header.header.mobile .header-nav__ul,
+header.header.mobile.scroll-header .header-nav__ul {
+  display: block !important;
+}
+
+header.header.mobile .header-nav__li,
+header.header.mobile.scroll-header .header-nav__li {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+header.header.mobile .header-nav__a,
+header.header.mobile.scroll-header .header-nav__a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header.header.scroll-header {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  top: 0;
+  left: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+header.header.scroll-header .hamb {
+  position: relative;
+  top: 5px;
 }
 
 section.first-screen {
@@ -685,6 +779,15 @@ section.about .about-article__button {
 section.about .about-article__button_link {
   color: #e78b28;
   font-weight: 600;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+section.about .about-article__button_link:hover,
+section.about .about-article__button_link:active {
+  color: #B46C20;
 }
 
 section.about .about-figure {
@@ -898,12 +1001,14 @@ section.faq {
   padding: 100px 0;
 }
 
-section.faq_modal {
+section.faq_modal,
+section.faq_prices {
   padding: 0;
   padding-top: 30px;
 }
 
-section.faq_modal .article {
+section.faq_modal .article,
+section.faq_prices .article {
   color: #fff;
 }
 
@@ -1098,6 +1203,16 @@ section.rulers .ruler__a {
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 5px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+section.rulers .ruler__a:hover,
+section.rulers .ruler__a:active {
+  color: #e78b28;
+  text-decoration: underline;
 }
 
 footer.footer {
@@ -1140,25 +1255,39 @@ section.modal {
   position: fixed;
   width: 100%;
   height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.9);
   overflow: auto;
-  padding: 50px 10px;
+  padding: 60px 10px;
+}
+
+section.modal::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+}
+
+section.modal::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #e78b28;
 }
 
 section.modal .closer {
   border: none;
   background-color: transparent;
   position: fixed;
-  top: 15px;
+  top: 20px;
   right: 15px;
+  z-index: 15;
+  cursor: pointer;
 }
 
 section.modal .closer svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 section.modal #closer {
@@ -1187,6 +1316,41 @@ section.modal .modal__container {
 
 section.modal .modal__container > * {
   display: none;
+}
+
+section.modal .modal__container > .opened {
+  display: block;
+}
+
+section.buttons .btn-up {
+  position: fixed;
+  z-index: 5;
+  right: 10px;
+  bottom: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  display: none;
+}
+
+section.buttons .btn-up.show {
+  display: block;
+}
+
+section.buttons a {
+  font-size: 14px;
+  color: #e78b28;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+section.buttons a:hover,
+section.buttons a:active {
+  color: #B46C20;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1259,6 +1423,7 @@ section.modal .modal__container > * {
   header.header button.hamb {
     display: block;
     margin-left: auto;
+    margin-bottom: 10px;
   }
 
   section.first-screen .first-article__h {
